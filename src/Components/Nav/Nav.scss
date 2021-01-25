@@ -1,15 +1,36 @@
+@import "../../variables";
+
 nav {
-    height: 50px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 50px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    width: 50%;
-    list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  width: 50%;
+  list-style: none;
+  font-family: MomcakeBold;
+  li {
+    font-size: 20px;
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  color: $main-text;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:hover {
+  text-decoration: none;
+}
+
+.active-nav {
+  color: $highlighter;
 }
