@@ -1,5 +1,10 @@
 @import '../../variables';
 
+@font-face {
+  font-family: 'MomcakeBold';
+  src: url('../../assets/MomcakeBold-WyonA.otf') format('opentype');
+}
+
 html {
   height: 100%;
   margin: 0;
