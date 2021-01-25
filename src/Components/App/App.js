@@ -1,11 +1,14 @@
-import './App.scss';
+import "./App.scss";
 import WelcomePage from "../WelcomePage";
+import Nav from "../Nav";
 
 function App() {
   return (
-    <WelcomePage />
+    <>
+      <Nav />
+      <WelcomePage />
+    </>
   );
 }
 
 export default App;
-
