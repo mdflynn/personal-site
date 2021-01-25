@@ -2,11 +2,23 @@
 
 nav {
   height: 50px;
-  margin: 0;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  .logo-div {
+      background-color: $highlighter;
+      height: 50px;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .logo {
+          font-size: 25px;
+      }
+  }
 }
+
 
 ul {
   display: flex;
@@ -16,7 +28,7 @@ ul {
   list-style: none;
   font-family: MomcakeBold;
   li {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 

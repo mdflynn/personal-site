@@ -5,20 +5,35 @@ import './Nav.scss';
 const Nav = () => {
   return (
     <nav>
+      <div className='logo-div'>
+        <p className='logo'>MF</p>
+      </div>
       <ul>
-        <NavLink to='/' exact className="nav-link" activeClassName="active-nav">
+        <NavLink to='/' exact className='nav-link' activeClassName='active-nav'>
           <li>Home</li>
         </NavLink>
-        <NavLink to='/about' className="nav-link" activeClassName="active-nav">
+        <NavLink to='/about' className='nav-link' activeClassName='active-nav'>
           <li>About</li>
         </NavLink>
-        <NavLink to='/portfolio' className="nav-link" activeClassName="active-nav">
+        <NavLink
+          to='/portfolio'
+          className='nav-link'
+          activeClassName='active-nav'
+        >
           <li>Portfolio</li>
         </NavLink>
-        <NavLink to='/interests' className="nav-link" activeClassName="active-nav">
+        <NavLink
+          to='/interests'
+          className='nav-link'
+          activeClassName='active-nav'
+        >
           <li>Interests</li>
         </NavLink>
-        <NavLink to='/contact' className="nav-link" activeClassName="active-nav">
+        <NavLink
+          to='/contact'
+          className='nav-link'
+          activeClassName='active-nav'
+        >
           <li>Contact</li>
         </NavLink>
       </ul>
