@@ -1,0 +1,34 @@
+// @font-face {
+//     font-family: 'MomcakeBold';
+//     src: url('../../assets/MomcakeBold-WyonA.otf') format('opentype');
+//   }
+
+.welcome-main {
+  display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+  font-size: 84px;
+  font-family: "MomcakeBold";
+  // position: relative;
+  width: 100%;
+  .left-main {
+    flex: 66%;
+    .name {
+      // z-index: -1;
+      // position: absolute;
+      // left: 50%;
+    }
+    .headshot {
+      // position: absolute;
+      // bottom: 0;
+      // left: 50%;
+      height: 600px;
+      width: 550px;
+      // z-index: 0;
+    }
+  }
+  .right-main {
+      flex: 34%;
+  }
+}
