@@ -53,7 +53,10 @@ const WelcomePage = () => {
           <p className="welcome-contact">
             P: (970) 456-6128
             <br />
-            E: <a className="email-link" href="mailto:mdflynn34@outlook.com">mdflynn34@outlook.com</a>
+            E:{" "}
+            <a className="email-link" href="mailto:mdflynn34@outlook.com">
+              mdflynn34@outlook.com
+            </a>
           </p>
         </section>
       </>

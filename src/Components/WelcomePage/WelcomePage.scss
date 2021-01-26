@@ -1,4 +1,4 @@
-@import '../../variables';
+@import "../../variables";
 
 .welcome-main {
   display: flex;
@@ -54,7 +54,8 @@
   color: $highlighter;
 }
 
-.location, .intro {
+.location,
+.intro {
   margin: 0;
   font-size: 52px;
 }
@@ -73,8 +74,6 @@
   -webkit-animation: name 1.5s ease-out both;
   animation: name 1.5s ease-out both;
 }
-
-
 
 @-webkit-keyframes name {
   0% {
