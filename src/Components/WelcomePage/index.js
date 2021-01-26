@@ -50,7 +50,7 @@ const WelcomePage = () => {
         <img className="shapes" src={design} alt="geometric shapes" />
         <section className="right-main">
           <p className="title">Software Engineer</p>
-          <p className="location">Basend in Denver,</p>
+          <p className="location">Based in Denver,</p>
           <p className="intro">I'm a developer and fitness enthusiast.</p>
           <p className="welcome-contact">
             P: (970) 456-6128
