@@ -1,0 +1,48 @@
+@import "../../variables";
+
+nav {
+  height: 50px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .logo-div {
+      background-color: $highlighter;
+      height: 50px;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .logo {
+          font-size: 25px;
+      }
+  }
+}
+
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  width: 50%;
+  list-style: none;
+  font-family: MomcakeBold;
+  li {
+    font-size: 18px;
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  color: $main-text;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:hover {
+  text-decoration: none;
+}
+
+.active-nav {
+  color: $highlighter;
+}
