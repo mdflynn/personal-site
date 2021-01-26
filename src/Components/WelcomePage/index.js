@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./WelcomePage.scss";
 import mike from "../../assets/headshot_nobackground.png";
+import design from "../../assets/design.svg";
 
 const WelcomePage = () => {
   const [load, setLoad] = useState(false);
@@ -45,7 +46,8 @@ const WelcomePage = () => {
 
   const displaySide = () => {
     return (
-      <>
+      <section className="side-section">
+        <img className="shapes" src={design} alt="geometric shapes" />
         <section className="right-main">
           <p className="title">Software Engineer</p>
           <p className="location">Basend in Denver,</p>
@@ -59,7 +61,7 @@ const WelcomePage = () => {
             </a>
           </p>
         </section>
-      </>
+      </section>
     );
   };
 
