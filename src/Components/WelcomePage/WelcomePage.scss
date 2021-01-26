@@ -1,3 +1,5 @@
+@import '../../variables';
+
 .welcome-main {
   display: flex;
   font-size: 84px;
@@ -21,121 +23,171 @@
         height: 600px;
         width: 550px;
         src: url("../../assets/headshot_nobackground.png");
+        -webkit-animation: headshot 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+          both;
+        animation: headshot 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
       }
     }
   }
-  .right-main {
-    flex: 34%;
+}
+
+.right-main {
+  margin-right: 50px;
+  align-self: center;
+  width: 34%;
+  .title {
+    font-size: 20px;
+    color: $highlighter;
+    text-decoration: underline;
   }
+  .welcome-contact {
+    color: $highlighter;
+    font-size: 18px;
+  }
+}
+
+.email-link,
+.email-link:hover,
+.email-link:focus,
+.email-link:hover {
+  text-decoration: none;
+  color: $highlighter;
+}
+
+.location, .intro {
+  margin: 0;
+  font-size: 52px;
 }
 
 .entrance {
   -webkit-animation: entrance 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: entrance 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  
 }
 
 .exit {
-    -webkit-animation: exit 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
-	        animation: exit 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
+  -webkit-animation: exit 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s both;
+  animation: exit 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s both;
 }
 
 .name {
-	-webkit-animation: name 1.5s ease-out 2s both;
-	        animation: name 1.5s ease-out 2s both;
+  -webkit-animation: name 1.5s ease-out both;
+  animation: name 1.5s ease-out both;
 }
 
- @-webkit-keyframes name {
-    0% {
-      -webkit-transform: translateX(-800px) rotate(-540deg);
-              transform: translateX(-800px) rotate(-540deg);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0) rotate(0deg);
-              transform: translateX(0) rotate(0deg);
-      opacity: 1;
-    }
-  }
-  @keyframes name {
-    0% {
-      -webkit-transform: translateX(-800px) rotate(-540deg);
-              transform: translateX(-800px) rotate(-540deg);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0) rotate(0deg);
-              transform: translateX(0) rotate(0deg);
-      opacity: 1;
-    }
-  }
-  
-  
 
-  @-webkit-keyframes entrance {
-    0% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      -webkit-transform-origin: 0% 0%;
-              transform-origin: 0% 0%;
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-transform-origin: 0% 0%;
-              transform-origin: 0% 0%;
-      opacity: 1;
-    }
+
+@-webkit-keyframes name {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
   }
-  @keyframes entrance {
-    0% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      -webkit-transform-origin: 0% 0%;
-              transform-origin: 0% 0%;
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-transform-origin: 0% 0%;
-              transform-origin: 0% 0%;
-      opacity: 1;
-    }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
   }
+}
+@keyframes name {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes entrance {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+}
+@keyframes entrance {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+}
 
 @-webkit-keyframes exit {
-    0% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-      opacity: 1;
-    }
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1;
   }
-  @keyframes exit {
-    0% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-      opacity: 1;
-    }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1;
   }
-  
-  
+}
+@keyframes exit {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes headshot {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes headshot {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
