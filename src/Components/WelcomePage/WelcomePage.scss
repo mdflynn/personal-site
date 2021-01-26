@@ -34,7 +34,8 @@
 .right-main {
   margin-right: 50px;
   align-self: center;
-  width: 34%;
+  width: 75%;
+  z-index: 1;
   .title {
     font-size: 20px;
     color: $highlighter;
@@ -44,6 +45,17 @@
     color: $highlighter;
     font-size: 18px;
   }
+}
+
+.side-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.shapes {
+  height: 300px;
+  width: 300px;
+  margin: 50px 0 -100px 0;
 }
 
 .email-link,
