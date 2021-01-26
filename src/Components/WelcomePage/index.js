@@ -13,7 +13,7 @@ const WelcomePage = () => {
           <br />
           Flynn
         </p>
-        <img className="headshot" src={mike} />
+        <img className="headshot" src={mike} alt="Mike Headshot"/>
       </section>
     );
   };
