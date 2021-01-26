@@ -1,34 +1,62 @@
-// @font-face {
-//     font-family: 'MomcakeBold';
-//     src: url('../../assets/MomcakeBold-WyonA.otf') format('opentype');
-//   }
-
 .welcome-main {
   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
   font-size: 84px;
   font-family: "MomcakeBold";
-  // position: relative;
   width: 100%;
   .left-main {
     flex: 66%;
+    min-height: 100vh;
     .name {
-      // z-index: -1;
-      // position: absolute;
-      // left: 50%;
+      position: absolute;
+      margin: 0;
+      padding-top: 150px;
+      padding-left: 10px;
     }
     .headshot {
-      // position: absolute;
-      // bottom: 0;
-      // left: 50%;
       height: 600px;
       width: 550px;
-      // z-index: 0;
+      src: url("../../assets/headshot_nobackground.png");
     }
   }
   .right-main {
-      flex: 34%;
+    flex: 34%;
+  }
+}
+
+.entrance {
+  -webkit-animation: entrance 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: entrance 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes entrance {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+}
+@keyframes entrance {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
   }
 }
