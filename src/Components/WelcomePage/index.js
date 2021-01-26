@@ -26,7 +26,7 @@ const WelcomePage = () => {
     setInterval(() => {
       setLoad(true);
     }, 2000);
-  }
+  };
 
   const displayEntrance = () => {
     return (
@@ -34,7 +34,7 @@ const WelcomePage = () => {
         <p
           className={newClass}
           onAnimationEnd={() => {
-            handleEntranceAnimation()
+            handleEntranceAnimation();
           }}
         >
           Hi, I'm Mike
@@ -43,11 +43,28 @@ const WelcomePage = () => {
     );
   };
 
+  const displaySide = () => {
+    return (
+      <>
+        <section className="right-main">
+          <p className="title">Software Engineer</p>
+          <p className="location">Basend in Denver,</p>
+          <p className="intro">I'm a developer and fitness enthusiast.</p>
+          <p className="welcome-contact">
+            P: (970) 456-6128
+            <br />
+            E: <a className="email-link" href="mailto:mdflynn34@outlook.com">mdflynn34@outlook.com</a>
+          </p>
+        </section>
+      </>
+    );
+  };
+
   return (
     <main className="welcome-main">
       {!load && displayEntrance()}
       {load && displayMain()}
-      <section className="right-main"></section>
+      {load && displaySide()}
     </main>
   );
 };
