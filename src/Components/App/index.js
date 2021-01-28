@@ -11,6 +11,8 @@ function App() {
   return (
     <>
       <Nav />
+      <h1>⚠️⚠️SITE UNDER CONSTRUCTION⚠️⚠️</h1>
+
       <Switch>
         <Route exact path='/' component={WelcomePage} />
         <Route exact path='/personal-site' component={WelcomePage} />
