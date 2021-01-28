@@ -6,11 +6,10 @@
   align-items: center;
   height: 100%;
   .about-even {
-    background: lightcoral;
     height: 500px;
   }
   .about-odd {
-    background: lightblue;
+    background: $altbackground;
     height: 500px;
   }
 }
@@ -25,17 +24,6 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  .return-top {
-    font-family: MomcakeBold;
-    font-size: 22px;
-    margin-top: 50px;
-    background: none;
-    color: $highlighter;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    outline: inherit;
-  }
 }
 
 .bubbly-button {
@@ -43,7 +31,7 @@
   display: inline-block;
   font-size: 1em;
   padding: 1em 2em;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 60px;
   -webkit-appearance: none;
   appearance: none;
