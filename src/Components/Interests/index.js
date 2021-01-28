@@ -5,3 +5,14 @@ const Interests = () => {
 };
 
 export default Interests;
+
+//baking
+//lifting
+//miami dolphins
+//lotr / harry potter
+//gaming
+//festivals
+//grilling / smoking 
+//space
+//ai -> how will it shape society when most things are automated
+//snowboarding

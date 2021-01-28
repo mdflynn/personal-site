@@ -5,3 +5,8 @@ const Contact = () => {
 };
 
 export default Contact;
+//linkedin
+//github
+//twitter
+//email
+//phone 
