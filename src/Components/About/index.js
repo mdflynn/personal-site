@@ -1,5 +1,12 @@
 import React, { useState } from "react";
 import "./About.scss";
+import nightPrague from '../../assets/night-prague.jpg';
+import steamboat from '../../assets/steamboat.jpg';
+import denver from '../../assets/denver.jpg';
+import dispatchCenter from '../../assets/dispatchCenter.jpg';
+import careerChange from '../../assets/careerChange.jpg';
+import coding from '../../assets/coding.jpg';
+import wellsFargo from '../../assets/wellsFargo.jpg';
 
 const About = () => {
   const [classAnimate, setClassAnimate] = useState("bubbly-button");
@@ -21,6 +28,7 @@ const About = () => {
   return (
     <section className="about-container">
       <section className="about-even">
+      <img className="about-img" src={wellsFargo} alt="prague at night" />
         <p className="about-even-p">
           After I graduated UNC, I spent a few months selling Hyundais before I
           found my first career oriented job. I started off at Wells Fargo
@@ -48,8 +56,10 @@ const About = () => {
           my certification, do a bit of teaching, and explore central and
           eastern Europe. It was a life-changing experience
         </p>
+        <img className="about-img" src={nightPrague} alt="prague at night" />
       </section>
       <section className="about-even">
+        <img className="about-img" src={steamboat} alt="steamboat" />
         <p className="about-even-p">
           After I came back from Europe, I spent some time worker as a teller
           and snowboarding as much as possible living in Steamboat Springs, CO.
@@ -72,8 +82,10 @@ const About = () => {
           site's 911 data and routing. Ensuring that 911 calls were properly
           routed to the nearest PSAP (Public Safety Answering Point).
         </p>
+        <img className="about-img" src={denver} alt="denver" />
       </section>
       <section className="about-even">
+        <img className="about-img" src={dispatchCenter} alt="911 dispatcher" />
         <p className="about-even-p">
           I took an opportunity to utilize my Public Safety knowledge and joined
           Motorolla Solutions as a Senior Account Manager. It was a great
@@ -102,8 +114,10 @@ const About = () => {
           to change my career path and committed to attending Turing School of
           Software & Design.
         </p>
+        <img className="about-img" src={careerChange} alt="whats your next move" />
       </section>
       <section className="about-even">
+      <img className="about-img" src={coding} alt="block of code" />
         <p className="about-even-p">
           I've been thinking about coding for the better part of three years. I
           tried random tutorials online but never really committed to it. But
