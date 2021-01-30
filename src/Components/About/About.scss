@@ -40,7 +40,7 @@
   width: 100%;
 }
 
-.odd-div {
+.text-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -48,5 +48,10 @@
 
 .left-arrow {
   align-self: flex-end;
+  margin-bottom: -50px;
+}
+
+.right-arrow {
+  align-self: start;
   margin-bottom: -50px;
 }

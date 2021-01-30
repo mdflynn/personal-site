@@ -35,11 +35,11 @@ const About = () => {
             rigorous sales goals while ensuring customer's were set up in the
             best available banking situation.
           </p>
-          <img className="arrow" src={rightArrow} alt="right arrow" />
+          <img className="arrow right-arrow" src={rightArrow} alt="right arrow" />
         </div>
       </section>
       <section className="about-odd">
-        <div className="odd-div">
+        <div className="text-container">
           <p className="about-odd-p">
             After I spent roughly three years working for Wells Fargo at varying
             locations, I decided that I wasn't happy where I was and how my
@@ -58,7 +58,7 @@ const About = () => {
       </section>
       <section className="about-even">
         <img className="about-img" src={steamboat} alt="steamboat" />
-        <div>
+        <div className="text-container">
           <p className="about-even-p">
             After I came back from Europe, I spent some time worker as a teller
             and snowboarding as much as possible living in Steamboat Springs,
@@ -71,11 +71,11 @@ const About = () => {
             attending the University of Colorado at Denver. I was to graduate
             with my MBA that focuses on International Business.
           </p>
-          <img className="arrow" src={rightArrow} alt="right arrow" />
+          <img className="arrow right-arrow" src={rightArrow} alt="right arrow" />
         </div>
       </section>
       <section className="about-odd">
-        <div className="odd-div">
+        <div className="text-container">
           <p className="about-odd-p">
             After my MBA, I worked at Intrado for three years. A company that's
             in the public safety and telecommunication industry. I worked my way
@@ -90,7 +90,7 @@ const About = () => {
       </section>
       <section className="about-even">
         <img className="about-img" src={dispatchCenter} alt="911 dispatcher" />
-        <div>
+        <div className="text-container">
           <p className="about-even-p">
             I took an opportunity to utilize my Public Safety knowledge and
             joined Motorolla Solutions as a Senior Account Manager. It was a
@@ -106,11 +106,11 @@ const About = () => {
             grew to love the freedom it afforded me and I was able to make ends
             meet!
           </p>
-          <img className="arrow" src={rightArrow} alt="right arrow" />
+          <img className="arrow right-arrow" src={rightArrow} alt="right arrow" />
         </div>
       </section>
       <section className="about-odd">
-        <div className="odd-div">
+        <div className="text-container">
           <p className="about-odd-p">
             I ended up taking an assistant supervisor position in the treasury
             management department at FirstBank. I was responsible for a team of
@@ -133,7 +133,7 @@ const About = () => {
       </section>
       <section className="about-even">
         <img className="about-img" src={coding} alt="block of code" />
-        <div>
+        <div className="text-container">
         <p className="about-even-p">
           I've been thinking about coding for the better part of three years. I
           tried random tutorials online but never really committed to it. But
