@@ -14,7 +14,6 @@
       font-size: 30px;
       text-decoration: underline;
     }
-
   }
   .about-odd {
     background: $altbackground;
@@ -28,22 +27,11 @@
   max-height: 100%;
 }
 
-.about-even-p,
-.about-odd-p {
-  font-family: MomcakeThin;
-}
-
 .about-footer {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-
-.text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .left-arrow {
@@ -54,4 +42,42 @@
 .right-arrow {
   align-self: start;
   margin-bottom: -50px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+}
+
+.about-p {
+  font-family: MomcakeThin;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.text-container:hover .overlay {
+  opacity: 1;
 }
