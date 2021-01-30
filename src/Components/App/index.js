@@ -1,7 +1,7 @@
 import './App.scss';
 import WelcomePage from '../WelcomePage';
 import Nav from '../Nav';
-import About from '../About';
+import Career from '../Career';
 import Portfolio from '../Portfolio';
 import Interests from '../Interests';
 import Contact from '../Contact';
@@ -16,7 +16,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={WelcomePage} />
         <Route exact path='/personal-site' component={WelcomePage} />
-        <Route exact path='/about' component={About} />
+        <Route exact path='/about' component={Career} />
         <Route exact path='/portfolio' component={Portfolio} />
         <Route exact path='/interests' component={Interests} />
         <Route exact path='/contact' component={Contact} />

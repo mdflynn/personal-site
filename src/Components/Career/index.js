@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.scss";
+import "./Career.scss";
 import nightPrague from "../../assets/night-prague.jpg";
 import steamboat from "../../assets/steamboat.jpg";
 import denver from "../../assets/denver.jpg";
@@ -12,6 +12,7 @@ import Button from "../Button";
 const About = () => {
   return (
     <section className="about-container">
+      <h1 className="career-title">Career Journey</h1>
       <section className="about-even">
         <div className="text-container">
           <img className="about-img" src={wellsFargo} alt="horse carraige" />
