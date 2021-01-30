@@ -21,13 +21,13 @@ describe("Nav", () => {
       </MemoryRouter>
     );
     const home = screen.getByText("Home");
-    const about = screen.getByText("About");
+    const career = screen.getByText("Career");
     const portfolio = screen.getByText("Portfolio");
     const interests = screen.getByText("Interests");
     const contact = screen.getByText("Contact");
 
     expect(home).toBeInTheDocument();
-    expect(about).toBeInTheDocument();
+    expect(career).toBeInTheDocument();
     expect(portfolio).toBeInTheDocument();
     expect(interests).toBeInTheDocument();
     expect(contact).toBeInTheDocument();
