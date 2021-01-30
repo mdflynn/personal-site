@@ -8,6 +8,12 @@
   .about-even {
     height: 500px;
     display: flex;
+    span {
+      color: $highlighter;
+      font-family: MomcakeBold;
+      font-size: 30px;
+      text-decoration: underline;
+    }
 
   }
   .about-odd {
@@ -32,4 +38,15 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.odd-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left-arrow {
+  align-self: flex-end;
+  margin-bottom: -50px;
 }

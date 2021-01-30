@@ -17,6 +17,7 @@ const Button = () => {
       topFunction();
     }, 500);
   };
+
   return (
     <button className={`bubbly-button ${classAnimate}`} onClick={animateButton}>
       Return to top
