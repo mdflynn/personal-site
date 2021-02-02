@@ -1,10 +1,27 @@
 @import "react-slideshow-image/dist/styles.css";
+@import "../../variables";
 
 .slide-div {
-    width: 100%;
+  width: 100%;
+  position: relative;
+  text-align: center;
 }
 
 .slide-img {
   object-fit: cover;
   width: 100%;
+}
+
+.portfolio-title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 64px;
+  color: #05ffbb;
+  font-family: MomcakeBold;
+}
+
+.portfolio-container {
+  margin: 0 50px;
 }

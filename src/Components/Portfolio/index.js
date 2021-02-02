@@ -1,30 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Portfolio.scss";
 import { Zoom } from "react-slideshow-image";
 
-import denver from "../../assets/denver.jpg";
-import wellsFargo from "../../assets/wellsFargo.jpg";
+import rancid from "../../assets/rancid.png";
+import gamesleuth from "../../assets/gamesleuth.png";
 import prague from "../../assets/prague.jpg";
 
 const Portfolio = () => {
-  const images = [denver, wellsFargo, prague];
+  const [load, setLoad] = useState(false);
+
+  // const images = [gamesleuth, rancid, prague];
 
   const zoomInProperties = {
     indicators: true,
     scale: 1.4,
   };
 
-  const generateSlideshow = () => {
-    return images.map((each, index) => (
-      <div key={index} className="slide-div">
-        <img className="slide-img" src={each} alt="Portfolio" />
-      </div>
-    ));
-  };
+  //animation for portfolio, then setLoad to generate slideshow
 
   return (
-    <div>
-      <Zoom {...zoomInProperties}>{generateSlideshow()}</Zoom>
+    <div className="portfolio-container">
+      <Zoom {...zoomInProperties}>
+      <div key={0} className="slide-div">
+        <h1 className="portfolio-title">Game Sleuth</h1>
+        <img className="slide-img" src={gamesleuth} alt="Game Sleuth" />
+      </div>
+      <div key={1} className="slide-div">
+        <h1 className="portfolio-title">Rancid Tomatillos</h1>
+        <img className="slide-img" src={rancid} alt="Rancid Tomatillos" />
+      </div>
+      <div key={2} className="slide-div">
+        <h1 className="portfolio-title">Project 3</h1>
+        <img className="slide-img" src={prague} alt="Portfolio" />
+      </div>
+      </Zoom>
     </div>
   );
 };
