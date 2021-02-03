@@ -4,7 +4,7 @@ import nightPrague from "../../assets/night-prague.jpg";
 import steamboat from "../../assets/steamboat.jpg";
 import denver from "../../assets/denver.jpg";
 import dispatchCenter from "../../assets/dispatchCenter.jpg";
-import careerChange from "../../assets/careerChange.jpg";
+import dreamBig from "../../assets/dream-big.jpg";
 import coding from "../../assets/coding.jpg";
 import wellsFargo from "../../assets/wellsFargo.jpg";
 import Button from "../Button";
@@ -118,7 +118,7 @@ const About = () => {
         <div className="text-container">
           <img
             className="about-img"
-            src={careerChange}
+            src={dreamBig}
             alt="whats your next move"
           />
           <div className="overlay">
