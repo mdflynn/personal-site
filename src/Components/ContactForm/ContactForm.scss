@@ -1,14 +1,6 @@
 @import "../../variables";
 
-$form-bg: #f8f4e5;
-$form-shadow: #ffa580;
-$form-primary-highlight: #95a4ff;
-$form-secondary-highlight: #ffc8ff;
-$font-size: 14pt;
-$font-color: #2A293E;
-
-
-form {
+.contact-form {
   background: #f8f4e5;
   padding: 50px 100px;
   border: 2px solid $altbackground;
@@ -40,6 +32,7 @@ form {
   line-height: $font-size * 2;
   padding: 0 20px;
   background: $form-shadow;
+  font-family: MomcakeBold;
   letter-spacing: 2px;
   transition: .2s all ease-in-out;
   outline: none;
