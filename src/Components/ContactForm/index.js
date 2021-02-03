@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import emailjs, { init } from "emailjs-com";
 import "./ContactForm.scss";
+init("user_SWyu6G36NmjN0H1xzQ0Xc");
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -9,7 +11,18 @@ const ContactForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    emailjs.sendForm("service_5re318s", "template_n4lovdo", event.target).then(
+      (result) => {
+        console.log("SUCCESS!", result.status, result.text);
+      },
+      (error) => {
+        console.log("FAILED...", error);
+      }
+    );
   };
+
+  //successful email feedback
 
   const handleNameChange = (event) => {
     const { value } = event.target;
@@ -30,6 +43,8 @@ const ContactForm = () => {
     const { value } = event.target;
     setMessage(value);
   };
+
+  // textarea autosize https://react-components.buildo.io/#textareaautosize
 
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
