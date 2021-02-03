@@ -5,6 +5,7 @@ const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -23,6 +24,11 @@ const ContactForm = () => {
   const handlePhoneNumberChange = (event) => {
     const { value } = event.target;
     setPhoneNumber(value);
+  };
+
+  const handleMessageChange = (event) => {
+    const { value } = event.target;
+    setMessage(value);
   };
 
   return (
@@ -52,6 +58,13 @@ const ContactForm = () => {
         value={phoneNumber}
         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
         onChange={handlePhoneNumberChange}
+      />
+      <textarea
+        className="input"
+        placeholder="Message"
+        name="message"
+        value={message}
+        onChange={handleMessageChange}
       />
       <button className="contact-btn">Contact</button>
     </form>
