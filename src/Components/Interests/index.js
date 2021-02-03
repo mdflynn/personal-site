@@ -16,3 +16,5 @@ export default Interests;
 //space
 //ai -> how will it shape society when most things are automated
 //snowboarding
+
+//should this be tech stack
