@@ -14,30 +14,40 @@ const Contact = () => {
         <div className="contact-div">
           <img className="icon" src={phone} alt="phone" />
           <div className="details">
-            <p>Call Me Now</p>
-            <p>970 456 6128</p>
+            <p className="headers">Call Me Now</p>
+            <p className="contact-content">970 456 6128</p>
           </div>
         </div>
         <div className="contact-div">
           <img className="icon" src={message} alt="message" />
           <div className="details">
-            <p>Send Me An Email</p>
-            <p>mdflynn34@outlook.com</p>
+            <p className="headers">Send Me An Email</p>
+            <a className="email-link" href="mailto:mdflynn34@outlook.com">
+              mdflynn34@outlook.com
+            </a>
           </div>
         </div>
         <div className="contact-div">
           <img className="icon" src={linkedin} alt="linkedin" />
           <div className="details">
-            <p>Reach Out On LinkedIn</p>
-            <p>LinkedIn</p>
+            <p className="headers">Reach Out On LinkedIn</p>
+            <a className="email-link" href="https://www.linkedin.com/in/mikeflynnmba/">
+              Mike Flynn, MBA
+            </a>
           </div>
         </div>
         <div className="contact-div">
           <img className="icon" src={twitter} alt="twitter" />
-        <div className="details">
-          <p>DM me on Twitter</p>
-          <p>Twitter</p>
-        </div>
+          <div className="details">
+            <p className="headers">DM me on Twitter</p>
+            <a
+              className="email-link"
+              href="https://twitter.com/messages/compose?recipient_id=1317841190478249985"
+              data-screen-name="@mikeflynncodes"
+            >
+              @mikeflynncodes
+            </a>
+          </div>
         </div>
       </section>
       <ContactForm />

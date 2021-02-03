@@ -1,4 +1,4 @@
-
+@import "../../variables";
 
 .contact {
   display: flex;
@@ -25,7 +25,16 @@
   display: flex;
   flex-direction: column;
   margin-left: 50px;
-  p {
+  .headers {
     margin: 0;
+    color: $sub-text;
+  }
+  .email-link, .contact-content {
+    color: $main-text;
+    font-size: 24px;
+    margin: 0;
+  }
+  .email-link:hover {
+    color: $highlighter;
   }
 }
