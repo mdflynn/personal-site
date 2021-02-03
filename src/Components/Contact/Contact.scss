@@ -1,0 +1,40 @@
+@import "../../variables";
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 40px;
+}
+
+.contact-main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-div {
+  display: flex;
+  // justify-content: space-between;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  .headers {
+    margin: 0;
+    color: $sub-text;
+  }
+  .email-link, .contact-content {
+    color: $main-text;
+    font-size: 24px;
+    margin: 0;
+  }
+  .email-link:hover {
+    color: $highlighter;
+  }
+}

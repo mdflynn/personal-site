@@ -6,7 +6,7 @@
   align-items: center;
   height: 100%;
   .about-even {
-    height: 500px;
+    height: 800px;
     display: flex;
     span {
       color: $highlighter;
@@ -17,7 +17,7 @@
   }
   .about-odd {
     background: $altbackground;
-    height: 500px;
+    height: 800px;
     display: flex;
   }
 }
