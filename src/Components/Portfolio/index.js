@@ -4,7 +4,7 @@ import { Zoom } from "react-slideshow-image";
 
 import rancid from "../../assets/rancid.png";
 import gamesleuth from "../../assets/gamesleuth.png";
-import prague from "../../assets/prague.jpg";
+import prague from "../../assets/night-prague.jpg";
 
 const Portfolio = () => {
   const [load, setLoad] = useState(false);
