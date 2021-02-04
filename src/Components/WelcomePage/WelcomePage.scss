@@ -196,3 +196,94 @@
     opacity: 1;
   }
 }
+
+.location {
+	-webkit-animation: location 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: location 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes location {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes location {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.intro {
+	-webkit-animation: intro 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+	        animation: intro 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+}
+
+ @-webkit-keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.intro-span {
+	-webkit-animation: intro-span 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
+	        animation: intro-span 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
+}
+
+ @-webkit-keyframes intro-span {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes intro-span {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.load-last {
+	-webkit-animation: load-last 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 4s both;
+	        animation: load-last 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 4s both;
+}
+
+ @-webkit-keyframes load-last {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes load-last {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

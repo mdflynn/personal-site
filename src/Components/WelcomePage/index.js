@@ -47,19 +47,19 @@ const WelcomePage = () => {
   const displaySide = () => {
     return (
       <section className="side-section">
-        <img className="shapes" src={design} alt="geometric shapes" />
+        <img className="shapes load-last" src={design} alt="geometric shapes" />
         <section className="right-main">
         {/* fade in last */}
-          <p className="title">Software Engineer</p>
+          <p className="title load-last">Software Engineer</p>
 
         {/* fade in first */}
           <p className="location">Based in Denver,</p>
 
       {/* fade in second, span around 2nd half, fade in third */}
-          <p className="intro">I'm a developer and fitness enthusiast.</p>
+          <p className="intro">I'm a developer <span className="intro-span">and fitness enthusiast.</span></p>
 
         {/* fade in last */}
-          <p className="welcome-contact">
+          <p className="welcome-contact load-last">
             P: (970) 456-6128
             <br />
             E:{" "}
