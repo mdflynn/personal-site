@@ -70,8 +70,8 @@
 }
 
 .i-linkedin {
-	-webkit-animation: i-linkedin 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-	        animation: i-linkedin 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	-webkit-animation: i-linkedin 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+	        animation: i-linkedin 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
 
  @-webkit-keyframes i-linkedin {
@@ -100,8 +100,8 @@
 }
 
 .i-message {
-	-webkit-animation: i-message 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
-	        animation: i-message 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+	-webkit-animation: i-message 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	        animation: i-message 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
 }
 
  @-webkit-keyframes i-message {
@@ -130,8 +130,8 @@
 }
 
 .i-phone {
-	-webkit-animation: i-phone 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
-	        animation: i-phone 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+	-webkit-animation: i-phone 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
+	        animation: i-phone 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
 }
 
  @-webkit-keyframes i-phone {
@@ -155,6 +155,37 @@
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.contactform {
+	-webkit-animation: contactform 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: contactform 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes contactform {
+  0% {
+    -webkit-transform: rotateY(-30deg) translateY(-300px) skewY(30deg);
+            transform: rotateY(-30deg) translateY(-300px) skewY(30deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+            transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
+  }
+}
+@keyframes contactform {
+  0% {
+    -webkit-transform: rotateY(-30deg) translateY(-300px) skewY(30deg);
+            transform: rotateY(-30deg) translateY(-300px) skewY(30deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+            transform: rotateY(0deg) translateY(0) skewY(0deg);
     opacity: 1;
   }
 }

@@ -31,7 +31,10 @@ const Contact = () => {
           <img className="icon" src={linkedin} alt="linkedin" />
           <div className="details">
             <p className="headers">Reach Out On LinkedIn</p>
-            <a className="email-link" href="https://www.linkedin.com/in/mikeflynnmba/">
+            <a
+              className="email-link"
+              href="https://www.linkedin.com/in/mikeflynnmba/"
+            >
               Mike Flynn, MBA
             </a>
           </div>
@@ -50,7 +53,9 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <ContactForm />
+      <div className="contactform">
+        <ContactForm />
+      </div>
     </main>
   );
 };
