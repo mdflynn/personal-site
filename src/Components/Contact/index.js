@@ -26,6 +26,7 @@ const Contact = () => {
               className="email-link"
               href="mailto:mdflynn34@outlook.com"
               target="_blank"
+              rel="noreferrer"
             >
               mdflynn34@outlook.com
             </a>
@@ -39,6 +40,7 @@ const Contact = () => {
               className="email-link"
               href="https://www.linkedin.com/in/mikeflynnmba/"
               target="_blank"
+              rel="noreferrer"
             >
               Mike Flynn, MBA
             </a>
@@ -53,6 +55,7 @@ const Contact = () => {
               href="https://twitter.com/messages/compose?recipient_id=1317841190478249985"
               data-screen-name="@mikeflynncodes"
               target="_blank"
+              rel="noreferrer"
             >
               @mikeflynncodes
             </a>
