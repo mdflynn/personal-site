@@ -11,15 +11,20 @@ const ContactForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-    emailjs.sendForm("service_5re318s", "template_n4lovdo", event.target).then(
-      (result) => {
-        console.log("SUCCESS!", result.status, result.text);
-      },
-      (error) => {
-        console.log("FAILED...", error);
-      }
-    );
+    if (name && email && phoneNumber && message) {
+      emailjs
+        .sendForm("service_5re318s", "template_n4lovdo", event.target)
+        .then(
+          (result) => {
+            console.log("SUCCESS!", result.status, result.text);
+          },
+          (error) => {
+            console.log("FAILED...", error);
+          }
+        );
+    } else {
+      alert("Please complete all fields");
+    }
   };
 
   //successful email feedback
@@ -71,7 +76,7 @@ const ContactForm = () => {
         type="tel"
         name="phoneNumber"
         value={phoneNumber}
-        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        pattern="[0-9]{10}"
         onChange={handlePhoneNumberChange}
       />
       <textarea

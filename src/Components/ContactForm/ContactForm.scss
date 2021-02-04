@@ -4,7 +4,11 @@
   background: #f8f4e5;
   padding: 50px 100px;
   border: 2px solid $altbackground;
-  box-shadow: 15px 15px 1px $form-shadow, 15px 15px 1px 2px $altbackground;
+  box-shadow: 15px 15px 1px $contact-highlight, 15px 15px 1px 2px $altbackground;
+}
+
+.contact-form:active {
+  box-shadow: 15px 15px 1px $form-shadow;
 }
 
 .input {
@@ -24,34 +28,34 @@
 }
 
 .input:focus {
-  border-bottom: 5px solid $form-shadow
+  border-bottom: 5px solid $form-shadow;
 }
 .contact-btn {
   display: block;
   margin: 0 auto;
   line-height: $font-size * 2;
   padding: 0 20px;
-  background: $form-shadow;
+  background: $contact-highlight;
   font-family: MomcakeBold;
   letter-spacing: 2px;
-  transition: .2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
   outline: none;
   border: 1px solid $altbackground;
-  box-shadow: 3px 3px 1px $form-primary-highlight, 3px 3px 1px 1px $altbackground;
+  box-shadow: 3px 3px 1px $form-shadow, 3px 3px 1px 1px $altbackground;
 }
-  .contact-btn:hover {
-    background: $altbackground;
-    color: white;
-    border: 1px solid $altbackground;
-  }
+.contact-btn:hover {
+  background: $altbackground;
+  color: white;
+  border: 1px solid $altbackground;
+}
 .contact-btn::selection {
-  background: $form-secondary-highlight
+  background: $form-secondary-highlight;
 }
 
 .input:-webkit-autofill,
-.input:-webkit-autofill:hover, 
+.input:-webkit-autofill:hover,
 .input:-webkit-autofill:focus {
-  border-bottom: 5px solid $form-primary-highlight;
+  border-bottom: 5px solid $contact-highlight;
   -webkit-text-fill-color: $font-color;
   -webkit-box-shadow: 0 0 0px 1000px $form-bg inset;
   transition: background-color 5000s ease-in-out 0s;

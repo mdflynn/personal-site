@@ -49,9 +49,16 @@ const WelcomePage = () => {
       <section className="side-section">
         <img className="shapes" src={design} alt="geometric shapes" />
         <section className="right-main">
+        {/* fade in last */}
           <p className="title">Software Engineer</p>
+
+        {/* fade in first */}
           <p className="location">Based in Denver,</p>
+
+      {/* fade in second, span around 2nd half, fade in third */}
           <p className="intro">I'm a developer and fitness enthusiast.</p>
+
+        {/* fade in last */}
           <p className="welcome-contact">
             P: (970) 456-6128
             <br />

@@ -23,11 +23,11 @@ const Nav = () => {
           <li>Portfolio</li>
         </NavLink>
         <NavLink
-          to='/interests'
+          to='/tech'
           className='nav-link'
           activeClassName='active-nav'
         >
-          <li>Interests</li>
+          <li>Resume</li>
         </NavLink>
         <NavLink
           to='/contact'
