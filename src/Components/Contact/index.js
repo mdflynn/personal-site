@@ -11,14 +11,14 @@ const Contact = () => {
     <main className="contact-main">
       <section className="contact">
         <h1>Contact</h1>
-        <div className="contact-div">
+        <div className="contact-div i-phone">
           <img className="icon" src={phone} alt="phone" />
           <div className="details">
             <p className="headers">Call Me Now</p>
             <p className="contact-content">970 456 6128</p>
           </div>
         </div>
-        <div className="contact-div">
+        <div className="contact-div i-message">
           <img className="icon" src={message} alt="message" />
           <div className="details">
             <p className="headers">Send Me An Email</p>
@@ -27,7 +27,7 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <div className="contact-div">
+        <div className="contact-div i-linkedin">
           <img className="icon" src={linkedin} alt="linkedin" />
           <div className="details">
             <p className="headers">Reach Out On LinkedIn</p>
@@ -36,7 +36,7 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <div className="contact-div">
+        <div className="contact-div i-twitter">
           <img className="icon" src={twitter} alt="twitter" />
           <div className="details">
             <p className="headers">DM me on Twitter</p>
