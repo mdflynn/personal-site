@@ -22,7 +22,11 @@ const Contact = () => {
           <img className="icon" src={message} alt="message" />
           <div className="details">
             <p className="headers">Send Me An Email</p>
-            <a className="email-link" href="mailto:mdflynn34@outlook.com">
+            <a
+              className="email-link"
+              href="mailto:mdflynn34@outlook.com"
+              target="_blank"
+            >
               mdflynn34@outlook.com
             </a>
           </div>
@@ -34,6 +38,7 @@ const Contact = () => {
             <a
               className="email-link"
               href="https://www.linkedin.com/in/mikeflynnmba/"
+              target="_blank"
             >
               Mike Flynn, MBA
             </a>
@@ -47,6 +52,7 @@ const Contact = () => {
               className="email-link"
               href="https://twitter.com/messages/compose?recipient_id=1317841190478249985"
               data-screen-name="@mikeflynncodes"
+              target="_blank"
             >
               @mikeflynncodes
             </a>
