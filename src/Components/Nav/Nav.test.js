@@ -23,13 +23,13 @@ describe("Nav", () => {
     const home = screen.getByText("Home");
     const career = screen.getByText("Career");
     const portfolio = screen.getByText("Portfolio");
-    const tech = screen.getByText("Tech");
+    const resume = screen.getByText("Resume");
     const contact = screen.getByText("Contact");
 
     expect(home).toBeInTheDocument();
     expect(career).toBeInTheDocument();
     expect(portfolio).toBeInTheDocument();
-    expect(tech).toBeInTheDocument();
+    expect(resume).toBeInTheDocument();
     expect(contact).toBeInTheDocument();
   });
 });

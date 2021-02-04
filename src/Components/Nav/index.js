@@ -27,7 +27,7 @@ const Nav = () => {
           className='nav-link'
           activeClassName='active-nav'
         >
-          <li>Tech</li>
+          <li>Resume</li>
         </NavLink>
         <NavLink
           to='/contact'
