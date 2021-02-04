@@ -1,10 +1,10 @@
 import React from "react";
 
-const Interests = () => {
-  return <h1>Interests</h1>;
+const Tech = () => {
+  return <h1>Tech</h1>;
 };
 
-export default Interests;
+export default Tech;
 
 //baking
 //lifting

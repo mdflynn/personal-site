@@ -3,7 +3,7 @@ import WelcomePage from "../WelcomePage";
 import Nav from "../Nav";
 import Career from "../Career";
 import Portfolio from "../Portfolio";
-import Interests from "../Interests";
+import Tech from "../Tech";
 import Contact from "../Contact";
 import { Route, Switch } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -23,7 +23,7 @@ function App() {
         <Route exact path="/personal-site" component={WelcomePage} />
         <Route exact path="/about" component={Career} />
         <Route exact path="/portfolio" component={Portfolio} />
-        <Route exact path="/interests" component={Interests} />
+        <Route exact path="/tech" component={Tech} />
         <Route exact path="/contact" component={Contact} />
       </Switch>
     </>
