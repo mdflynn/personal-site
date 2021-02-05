@@ -7,21 +7,6 @@ const WelcomePage = () => {
   const [load, setLoad] = useState(false);
   const [newClass, setNewClass] = useState("entrance");
 
-  const displayMain = () => {
-    return (
-      <section className="left-main">
-        <div className="img-div">
-          <p className="name">
-            Mike
-            <br />
-            Flynn
-          </p>
-          <img className="headshot" src={mike} alt="Mike Headshot" />
-        </div>
-      </section>
-    );
-  };
-
   const handleEntranceAnimation = () => {
     setNewClass("exit");
     setInterval(() => {
@@ -44,27 +29,43 @@ const WelcomePage = () => {
     );
   };
 
-  const displaySide = () => {
+  const displayMain = () => {
     return (
-      <section className="side-section">
-        <img className="shapes load-last" src={design} alt="geometric shapes" />
-        <section className="right-main">
-          <p className="title load-last">Software Engineer</p>
-          <p className="location">Based in Denver,</p>
-          <p className="intro">
-            I'm a developer{" "}
-            <span className="intro-span">and fitness enthusiast.</span>
-          </p>
-          <p className="welcome-contact load-last">
-            P: (970) 456-6128
-            <br />
-            E:{" "}
-            <a className="email-link" href="mailto:mdflynn34@outlook.com">
-              mdflynn34@outlook.com
-            </a>
-          </p>
+      <>
+        <section className="left-main">
+          <div className="img-div">
+            <p className="name">
+              Mike
+              <br />
+              Flynn
+            </p>
+            <img className="headshot" src={mike} alt="Mike Headshot" />
+          </div>
         </section>
-      </section>
+        <section className="side-section">
+          <img
+            className="shapes load-last"
+            src={design}
+            alt="geometric shapes"
+          />
+          <section className="right-main">
+            <p className="title load-last">Software Engineer</p>
+            <p className="location">Based in Denver,</p>
+            <p className="intro">
+              I'm a developer{" "}
+              <span className="intro-span">and fitness enthusiast.</span>
+            </p>
+            <p className="welcome-contact load-last">
+              P: (970) 456-6128
+              <br />
+              E:{" "}
+              <a className="email-link" href="mailto:mdflynn34@outlook.com">
+                mdflynn34@outlook.com
+              </a>
+            </p>
+          </section>
+        </section>
+      </>
     );
   };
 
@@ -72,7 +73,6 @@ const WelcomePage = () => {
     <main className="welcome-main">
       {!load && displayEntrance()}
       {load && displayMain()}
-      {load && displaySide()}
     </main>
   );
 };
