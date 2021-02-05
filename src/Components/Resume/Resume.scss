@@ -1,4 +1,6 @@
 @import "../../variables";
+@import "../../mixins";
+@import "https://fonts.googleapis.com/css?family=Permanent+Marker";
 
 .pdf {
   display: flex;
@@ -28,85 +30,42 @@
   margin-top: 20px;
 }
 
-.download-text,
-.download-text:hover,
-.download-text:focus,
-.download-text:after {
+.download-button:hover,
+.download-button:focus,
+.download-button:after {
+  cursor: pointer;
+}
+
+.link {
   text-decoration: none;
-  color: $form-shadow;
 }
 
-.download-text {
-	-webkit-animation: download-text 2s ease-in-out 2s infinite both;
-	        animation: download-text 2s ease-in-out 2s infinite both;
-          font-size: 28px;
+.glow-div {
+  font: 10vw/1 Permanent Marker;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: snow;
+  span {
+    animation: glow $d ease-in-out both infinite;
+    @for $i from 1 through $chars {
+      &:nth-child(#{$i}) {
+        animation-delay: $i/$chars * -$d;
+      }
+    }
+  }
 }
 
- @-webkit-keyframes download-text {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  10% {
-    -webkit-transform: scale(0.91);
-            transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  17% {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+@keyframes glow {
+  0%,
+  100% {
+    @include glow(nth($c, 1), nth($c, 2), nth($c, 3));
   }
   33% {
-    -webkit-transform: scale(0.87);
-            transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    @include glow(nth($c, 2), nth($c, 3), nth($c, 1));
   }
-  45% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-}
-@keyframes download-text {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  10% {
-    -webkit-transform: scale(0.91);
-            transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  17% {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  33% {
-    -webkit-transform: scale(0.87);
-            transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  45% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+  66% {
+    @include glow(nth($c, 3), nth($c, 1), nth($c, 2));
   }
 }
