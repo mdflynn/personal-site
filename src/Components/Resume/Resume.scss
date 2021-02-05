@@ -1,6 +1,5 @@
 @import "../../variables";
 @import "../../mixins";
-@import "https://fonts.googleapis.com/css?family=Permanent+Marker";
 
 .pdf {
   display: flex;
@@ -10,11 +9,12 @@
 .resume {
   text-align: center;
   font-family: MomcakeBold;
-  color: $highlighter;
+  color: $main-text;
   font-size: 20px;
   h1 {
     text-decoration: underline;
     margin-bottom: 50px;
+    color: $highlighter;
   }
 }
 
