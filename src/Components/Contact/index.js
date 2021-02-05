@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <main className="contact-main">
       <section className="contact">
-        <h1>Contact</h1>
+        <h1 className="contact-h1">Contact</h1>
         <div className="contact-div i-phone">
           <img className="icon" src={phone} alt="phone" />
           <div className="details">
