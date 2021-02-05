@@ -18,13 +18,27 @@ const About = () => {
     <section className="about-container">
       <h1 className="career-title">Career Journey</h1>
       <h4>(Hover to find out more)</h4>
-      <AboutCard {...careerWells} />
-      <AboutCard {...careerPrague} />
-      <AboutCard {...careerSteamboat} />
-      <AboutCard {...careerIntrado} />
-      <AboutCard {...careerMotorolla} />
-      <AboutCard {...careerFirstBank} />
-      <AboutCard {...careerTuring} />
+      <div>
+        <AboutCard {...careerWells} />
+      </div>
+      <div>
+        <AboutCard {...careerPrague} />
+      </div>
+      <div>
+        <AboutCard {...careerSteamboat} />
+      </div>
+      <div>
+        <AboutCard {...careerIntrado} />
+      </div>
+      <div>
+        <AboutCard {...careerMotorolla} />
+      </div>
+      <div>
+        <AboutCard {...careerFirstBank} />
+      </div>
+      <div>
+        <AboutCard {...careerTuring} />
+      </div>
       <footer className="about-footer">
         <Button />
       </footer>
