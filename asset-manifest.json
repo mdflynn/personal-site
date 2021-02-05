@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.27560e86.chunk.css",
-    "main.js": "/static/js/main.871efe46.chunk.js",
-    "main.js.map": "/static/js/main.871efe46.chunk.js.map",
+    "main.css": "/static/css/main.ffafa5af.chunk.css",
+    "main.js": "/static/js/main.24e3c778.chunk.js",
+    "main.js.map": "/static/js/main.24e3c778.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.647f0b20.js",
     "runtime-main.js.map": "/static/js/runtime-main.647f0b20.js.map",
     "static/css/2.b57b7cfd.chunk.css": "/static/css/2.b57b7cfd.chunk.css",
-    "static/js/2.5c6e5b0a.chunk.js": "/static/js/2.5c6e5b0a.chunk.js",
-    "static/js/2.5c6e5b0a.chunk.js.map": "/static/js/2.5c6e5b0a.chunk.js.map",
+    "static/js/2.961cc976.chunk.js": "/static/js/2.961cc976.chunk.js",
+    "static/js/2.961cc976.chunk.js.map": "/static/js/2.961cc976.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.b57b7cfd.chunk.css.map": "/static/css/2.b57b7cfd.chunk.css.map",
-    "static/css/main.27560e86.chunk.css.map": "/static/css/main.27560e86.chunk.css.map",
-    "static/js/2.5c6e5b0a.chunk.js.LICENSE.txt": "/static/js/2.5c6e5b0a.chunk.js.LICENSE.txt",
+    "static/css/main.ffafa5af.chunk.css.map": "/static/css/main.ffafa5af.chunk.css.map",
+    "static/js/2.961cc976.chunk.js.LICENSE.txt": "/static/js/2.961cc976.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/static/media/MomcakeThin-9Y6aZ.6e2715aa.otf",
     "static/media/coding.74f7ff06.jpg": "/static/media/coding.74f7ff06.jpg",
     "static/media/denver.5e055b25.jpg": "/static/media/denver.5e055b25.jpg",
@@ -24,7 +24,6 @@
     "static/media/message.5c51f5c7.svg": "/static/media/message.5c51f5c7.svg",
     "static/media/night-prague.f9ff9fd5.jpg": "/static/media/night-prague.f9ff9fd5.jpg",
     "static/media/phone.0c928626.svg": "/static/media/phone.0c928626.svg",
-    "static/media/prague.15b71889.jpg": "/static/media/prague.15b71889.jpg",
     "static/media/rancid.9103968c.png": "/static/media/rancid.9103968c.png",
     "static/media/resume.db1ce26d.pdf": "/static/media/resume.db1ce26d.pdf",
     "static/media/steamboat.91e76224.jpg": "/static/media/steamboat.91e76224.jpg",
@@ -34,8 +33,8 @@
   "entrypoints": [
     "static/js/runtime-main.647f0b20.js",
     "static/css/2.b57b7cfd.chunk.css",
-    "static/js/2.5c6e5b0a.chunk.js",
-    "static/css/main.27560e86.chunk.css",
-    "static/js/main.871efe46.chunk.js"
+    "static/js/2.961cc976.chunk.js",
+    "static/css/main.ffafa5af.chunk.css",
+    "static/js/main.24e3c778.chunk.js"
   ]
 }
