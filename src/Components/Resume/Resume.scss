@@ -1,4 +1,14 @@
+@import "../../variables";
+
 .pdf {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+.resume {
+  text-align: center;
+  font-family: MomcakeBold;
+  color: $highlighter;
+  font-size: 20px;
+  text-decoration: underline;
 }
