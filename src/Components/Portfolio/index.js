@@ -1,16 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Portfolio.scss";
 import { Zoom } from "react-slideshow-image";
 
 import rancid from "../../assets/rancid.png";
 import gamesleuth from "../../assets/gamesleuth.png";
-import prague from "../../assets/prague.jpg";
+import prague from "../../assets/night-prague.jpg";
 
 const Portfolio = () => {
-  const [load, setLoad] = useState(false);
-
-  // const images = [gamesleuth, rancid, prague];
-
   const zoomInProperties = {
     indicators: true,
     scale: 1.4,
