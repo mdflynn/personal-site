@@ -62,7 +62,7 @@
 .email-link,
 .email-link:hover,
 .email-link:focus,
-.email-link:hover {
+.email-link:after {
   text-decoration: none;
   color: $highlighter;
 }
