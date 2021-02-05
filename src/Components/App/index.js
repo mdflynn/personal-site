@@ -23,7 +23,7 @@ function App() {
         <Route exact path="/personal-site" component={WelcomePage} />
         <Route exact path="/about" component={Career} />
         <Route exact path="/portfolio" component={Portfolio} />
-        <Route exact path="/tech" component={Resume} />
+        <Route exact path="/resume" component={Resume} />
         <Route exact path="/contact" component={Contact} />
       </Switch>
     </>

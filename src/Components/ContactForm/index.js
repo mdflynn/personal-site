@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import emailjs, { init } from "emailjs-com";
+import TextareaAutosize from "react-autosize-textarea"
+
 import "./ContactForm.scss";
+
 init("user_SWyu6G36NmjN0H1xzQ0Xc");
 
 const ContactForm = () => {
@@ -27,8 +30,6 @@ const ContactForm = () => {
     }
   };
 
-  //successful email feedback
-
   const handleNameChange = (event) => {
     const { value } = event.target;
     setName(value);
@@ -48,8 +49,6 @@ const ContactForm = () => {
     const { value } = event.target;
     setMessage(value);
   };
-
-  // textarea autosize https://react-components.buildo.io/#textareaautosize
 
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
@@ -79,7 +78,7 @@ const ContactForm = () => {
         pattern="[0-9]{10}"
         onChange={handlePhoneNumberChange}
       />
-      <textarea
+      <TextareaAutosize
         className="input"
         placeholder="Message"
         name="message"

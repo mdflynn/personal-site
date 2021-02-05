@@ -23,7 +23,7 @@ const Nav = () => {
           <li>Portfolio</li>
         </NavLink>
         <NavLink
-          to='/tech'
+          to='/resume'
           className='nav-link'
           activeClassName='active-nav'
         >

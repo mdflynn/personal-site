@@ -5,6 +5,10 @@
   flex-direction: column;
 }
 
+.contact-h1 {
+  font-size: 34px;
+}
+
 .icon {
   height: 50px;
   width: 50px;
@@ -187,6 +191,28 @@
   100% {
     -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
             transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
+  }
+}
+
+.contact-h1 {
+	-webkit-animation: contact-h1 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+	        animation: contact-h1 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+}
+
+ @-webkit-keyframes contact-h1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes contact-h1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }

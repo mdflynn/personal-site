@@ -62,7 +62,7 @@
 .email-link,
 .email-link:hover,
 .email-link:focus,
-.email-link:hover {
+.email-link:after {
   text-decoration: none;
   color: $highlighter;
 }
@@ -198,8 +198,8 @@
 }
 
 .location {
-	-webkit-animation: location 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: location 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	-webkit-animation: location 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: location 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
  @-webkit-keyframes location {
