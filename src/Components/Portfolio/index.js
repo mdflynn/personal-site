@@ -12,7 +12,7 @@ const Portfolio = () => {
     <div className="portfolio-container">
       <h1 className="career-title">My Portfolio</h1>
       <h4>(Click title for more info)</h4>
-      <Zoom clasName="test" scale={1.2}>
+      <Zoom scale={1.2}>
         <div key={0} className="slide-div">
           <a
             className="portfolio-title"
@@ -71,7 +71,11 @@ const Portfolio = () => {
           />
         </div>
         <div key={2} className="slide-div test">
-          <h1 className="sign">Coming<br />Soon</h1>
+          <h1 className="sign">
+            Coming
+            <br />
+            Soon
+          </h1>
           <img className="slide-img" src={black} alt="Portfolio" />
         </div>
       </Zoom>

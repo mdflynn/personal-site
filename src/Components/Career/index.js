@@ -16,7 +16,7 @@ import {
 const About = () => {
   return (
     <section className="about-container">
-      <h1 className="career-title">Career Journey</h1>
+      <h1 className="career-title">My Career Journey</h1>
       <h4>(Hover to find out more)</h4>
       <div>
         <AboutCard {...careerWells} />

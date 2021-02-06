@@ -6,7 +6,6 @@ import "./Resume.scss";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const Resume = () => {
-  // <button className="download-button">Download Mike's Resume</button>
   return (
     <main className="resume">
       <h1>My Resume</h1>
