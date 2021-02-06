@@ -3,6 +3,7 @@
 .contact {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .contact-h1 {
@@ -15,14 +16,23 @@
   margin-bottom: 40px;
 }
 
-.contact-main {
+.contact-wrapper {
   display: flex;
   justify-content: space-around;
+  min-width: 100%;
+}
+
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    margin-bottom: 50px;
+  }
 }
 
 .contact-div {
   display: flex;
-  // justify-content: space-between;
 }
 
 .details {
@@ -34,7 +44,8 @@
     color: $sub-text;
     font-family: MomcakeThin;
   }
-  .email-link, .contact-content {
+  .email-link,
+  .contact-content {
     color: $main-text;
     font-size: 24px;
     margin: 0;
@@ -45,162 +56,162 @@
 }
 
 .i-twitter {
-	-webkit-animation: i-twitter 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: i-twitter 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: i-twitter 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: i-twitter 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
- @-webkit-keyframes i-twitter {
+@-webkit-keyframes i-twitter {
   0% {
     -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
+    transform: translateY(-1000px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 @keyframes i-twitter {
   0% {
     -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
+    transform: translateY(-1000px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 
 .i-linkedin {
-	-webkit-animation: i-linkedin 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
-	        animation: i-linkedin 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+  -webkit-animation: i-linkedin 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s
+    both;
+  animation: i-linkedin 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
 }
 
- @-webkit-keyframes i-linkedin {
+@-webkit-keyframes i-linkedin {
   0% {
     -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
+    transform: translateY(-1000px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 @keyframes i-linkedin {
   0% {
     -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
+    transform: translateY(-1000px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 
 .i-message {
-	-webkit-animation: i-message 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-	        animation: i-message 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+  -webkit-animation: i-message 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+  animation: i-message 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
 }
 
- @-webkit-keyframes i-message {
+@-webkit-keyframes i-message {
   0% {
     -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
+    transform: translateY(-1000px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 @keyframes i-message {
   0% {
     -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
+    transform: translateY(-1000px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 
 .i-phone {
-	-webkit-animation: i-phone 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
-	        animation: i-phone 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
+  -webkit-animation: i-phone 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s both;
+  animation: i-phone 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s both;
 }
 
- @-webkit-keyframes i-phone {
+@-webkit-keyframes i-phone {
   0% {
     -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
+    transform: translateY(-1000px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 @keyframes i-phone {
   0% {
     -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
+    transform: translateY(-1000px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 
-
 .contactform {
-	-webkit-animation: contactform 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: contactform 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: contactform 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: contactform 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
- @-webkit-keyframes contactform {
+@-webkit-keyframes contactform {
   0% {
     -webkit-transform: rotateY(-30deg) translateY(-300px) skewY(30deg);
-            transform: rotateY(-30deg) translateY(-300px) skewY(30deg);
+    transform: rotateY(-30deg) translateY(-300px) skewY(30deg);
     opacity: 0;
   }
   100% {
     -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
-            transform: rotateY(0deg) translateY(0) skewY(0deg);
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
     opacity: 1;
   }
 }
 @keyframes contactform {
   0% {
     -webkit-transform: rotateY(-30deg) translateY(-300px) skewY(30deg);
-            transform: rotateY(-30deg) translateY(-300px) skewY(30deg);
+    transform: rotateY(-30deg) translateY(-300px) skewY(30deg);
     opacity: 0;
   }
   100% {
     -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
-            transform: rotateY(0deg) translateY(0) skewY(0deg);
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
     opacity: 1;
   }
 }
 
 .contact-h1 {
-	-webkit-animation: contact-h1 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
-	        animation: contact-h1 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+  -webkit-animation: contact-h1 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
+  animation: contact-h1 2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
 }
 
- @-webkit-keyframes contact-h1 {
+@-webkit-keyframes contact-h1 {
   0% {
     opacity: 0;
   }
