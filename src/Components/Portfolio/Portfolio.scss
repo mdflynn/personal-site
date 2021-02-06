@@ -1,17 +1,18 @@
 @import "react-slideshow-image/dist/styles.css";
+@import url("https://fonts.googleapis.com/css?family=Exo+2:200i");
 @import "../../variables";
 
 .slide-div {
   width: 90%;
-  height: 80%;
+  height: 90%;
   margin: 0 auto 0 auto;
   position: relative;
   text-align: center;
 }
 
 .slide-img {
-  object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 
 .portfolio-title {
@@ -35,5 +36,49 @@
     font-family: MomcakeThin;
     color: $sub-text;
     margin-top: 0;
+  }
+}
+
+.sign {
+  font-family: "Exo 2", sans-serif;
+  font-size: 9rem;
+  font-weight: 200;
+  font-style: italic;
+  color: #fff;
+  padding: 4rem 6rem 5.5rem;
+  border: 0.4rem solid #fff;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  animation: flicker 1.5s infinite alternate;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: -0.2rem -0.2rem 1rem #fff, 0.2rem 0.2rem 1rem #fff,
+      0 0 2rem $neon-text, 0 0 4rem $neon-text, 0 0 6rem $neon-text,
+      0 0 8rem $neon-text, 0 0 10rem $neon-text;
+
+    box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem $neon-border,
+      inset 0 0 2rem $neon-border, 0 0 4rem $neon-border,
+      inset 0 0 4rem $neon-border;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+    box-shadow: none;
   }
 }
