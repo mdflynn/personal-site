@@ -74,8 +74,8 @@
 }
 
 .entrance {
-  -webkit-animation: entrance 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: entrance 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: entrance 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: entrance 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .exit {
@@ -198,8 +198,8 @@
 }
 
 .location {
-	-webkit-animation: location 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: location 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	-webkit-animation: location 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: location 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
  @-webkit-keyframes location {

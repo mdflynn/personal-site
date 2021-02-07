@@ -2,7 +2,7 @@ import React from "react";
 import ReactPlayer from "react-player";
 import "./Portfolio.scss";
 import { Zoom } from "react-slideshow-image";
-
+import Button from "../Button";
 import black from "../../assets/black.jpg";
 
 const Portfolio = () => {
@@ -71,7 +71,7 @@ const Portfolio = () => {
           />
         </div>
         <div key={2} className="slide-div test">
-          <h1 className="sign">
+          <h1 className="sign" data-testid="coming-soon">
             Coming
             <br />
             Soon
@@ -79,6 +79,9 @@ const Portfolio = () => {
           <img className="slide-img" src={black} alt="Portfolio" />
         </div>
       </Zoom>
+      <footer className="about-footer">
+        <Button />
+      </footer>
     </div>
   );
 };

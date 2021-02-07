@@ -13,7 +13,8 @@ import {
   careerTuring,
 } from "../../assets/careerDescription";
 
-const About = () => {
+const Career = () => {
+
   return (
     <section className="about-container">
       <h1 className="career-title">My Career Journey</h1>
@@ -46,4 +47,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Career;
