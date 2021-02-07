@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+- node
+notifications:
+  email: false
+deploy:
+  provider: heroku
+  api_key:
+    secure: Va4a91A/0xJw44ZC9xDlKksbk6c5woZCWyqRNMN/QIexWEQGudqdqfPs72czy1gF7F3tWkgOvMbJxFJ9GtO0N9jDt0fBu0paY+3Bs3ZktiX5bNjX5pNlmuXD/DIhQilJfW7PyRWxRcZkCln9TNZiuYZOdGnfL3+zfxPgAJnT3bhUVy6AnJqCmxK4xrnn2Q5gXT/3pddDDUaPhlvpl/Irf9483/Bdp1s3Y1PODTD7l5C2QZ9+pX/3tKicZqUsa3MD+VMUtuTnSVee2sljgpGp2DmupuYv/aI/VahOlxmBi/1QGYH19kuPp36l56bvs27w5A/yB+RDYwg/pUZmNEixX/y8KNff+XvW0FXruVgwilugCvxkxKf2QbUUG2rJTXYJUQNUaiFBLnBJrBpeLBuWMNE8PbQCliNvZfx528z9zF3mNIOJcOwEnZdFHX12/NxOkbPl2YVzOGm4xiUmqz/LUTPtN5+sLXBzrT8XYxZFw+8yMOxb5XWeB/ld7Eh6KN02CQybGedFwyFTTmWajIFTTY69kcQguiaM7T2yw0RgMdU7NplHMzbgbp1/2rHcolUkw9zO5o2Z2YLSyXbc/7xaXvLTlj4rcPgDuBDCpBxobRHEAfsDVrIGrimed8QA8DOBGae0R/wZOIP0vILLi0AjWu0imDCiaFrFCxaVO0PRVSs=
+  app: mikeflynncodes
