@@ -3,7 +3,6 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import Portfolio from "./index";
 import { MemoryRouter } from "react-router-dom";
-import userEvent from "@testing-library/user-event";
 
 describe("Portfolio", () => {
   beforeEach(() => {
