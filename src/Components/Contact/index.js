@@ -71,10 +71,4 @@ const Contact = () => {
   );
 };
 
-//need career title. wrap section / div in div to style properly
-
 export default Contact;
-//linkedin
-//twitter
-//email
-//phone
