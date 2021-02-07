@@ -71,7 +71,7 @@ const Portfolio = () => {
           />
         </div>
         <div key={2} className="slide-div test">
-          <h1 className="sign">
+          <h1 className="sign" data-testid="coming-soon">
             Coming
             <br />
             Soon
