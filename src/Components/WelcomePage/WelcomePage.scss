@@ -287,3 +287,15 @@
     opacity: 1;
   }
 }
+
+@media (max-width: $tablet-max) {
+  .welcome-main {
+    display: flex;
+    flex-direction: column-reverse;
+    .left-main {
+      justify-content: start;
+      align-items: start;
+      margin-right: 0;
+    }
+  }
+}
