@@ -12,8 +12,8 @@
   position: relative;
   text-align: center;
   .about-img {
-    width: 1250px;
-    height: 1250px;
+    max-width: 100%;
+    max-height: 100%;
   }
   .overlay {
     position: absolute;
@@ -53,4 +53,19 @@
 
 .text-container:hover .overlay {
   opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  .text-container .overlay {
+    opacity: 0.8;
+    position: static;
+    .text-container {
+      // justify-content: flex-start;
+    }
+    .about-p {
+      min-width: 90%;
+      white-space: normal;
+      overflow: hidden;
+    }
+  }
 }
