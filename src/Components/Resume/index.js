@@ -30,9 +30,11 @@ const Resume = () => {
           </Link>
           <span className="bottom-arrow">Click ⬆ to download</span>
         </div>
-        <Document file={resume} onLoadError={console.error}>
-          <Page pageNumber={1} />
-        </Document>
+        <div className="resume-div">
+          <Document className="PDFDocument" file={resume} onLoadError={console.error}>
+            <Page className="PDFPage PDFPageOne" pageNumber={1} />
+          </Document>
+        </div>
       </div>
       <footer className="about-footer">
         <Button />

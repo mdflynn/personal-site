@@ -29,7 +29,7 @@ export const careerPrague = {
   varying locations, I decided that I wasn't happy where I was and
   how my career was shaping up. I didn't feel strongly about my job
   and that it would bring my the type of challenges I was looking
-  for. I ended up quitting, casing out my 401(k) plan and moving
+  for. I ended up quitting, cashing out my 401(k) plan and moving to
   Prague, Czech Republic to get certified in Teaching English as a
   Foreign Language (TEFL). Due to Eyjafjallajökull in Iceland
   erupting right when we were supposed to fly to Europe, this trip

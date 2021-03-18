@@ -5,15 +5,15 @@ import Nav from "./index";
 import { MemoryRouter } from "react-router-dom";
 
 describe("Nav", () => {
-  it("should render the Nav", () => {
-    render(
-      <MemoryRouter>
-        <Nav />
-      </MemoryRouter>
-    );
-    const emblem = screen.getByText("MF");
-    expect(emblem).toBeInTheDocument();
-  });
+  // it("should render the Nav", () => {
+  //   render(
+  //     <MemoryRouter>
+  //       <Nav />
+  //     </MemoryRouter>
+  //   );
+  //   const emblem = screen.getByText("MF");
+  //   expect(emblem).toBeInTheDocument();
+  // });
   it("should render nav links", () => {
     render(
       <MemoryRouter>

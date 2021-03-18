@@ -57,6 +57,11 @@
   text-decoration: none;
 }
 
+.about-footer {
+  display: flex;
+  flex-direction: column;
+}
+
 @keyframes flicker {
   0%,
   19%,
@@ -80,5 +85,21 @@
   55% {
     text-shadow: none;
     box-shadow: none;
+  }
+}
+
+@media (max-width: $tablet-max) {
+  .portfolio-title {
+    font-size: 45px;
+    top: 50%;
+  }
+  .sign {
+    font-size: 2rem;
+    padding: 15px 30px;
+  }
+  .portfolio-container{
+    .bubbly-button {
+      display: none;
+    }
   }
 }

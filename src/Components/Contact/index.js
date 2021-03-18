@@ -1,5 +1,6 @@
 import React from "react";
 import ContactForm from "../ContactForm";
+import Button from "../Button";
 import phone from "../../assets/phone.svg";
 import message from "../../assets/message.svg";
 import linkedin from "../../assets/linkedin.svg";
@@ -22,7 +23,7 @@ const Contact = () => {
           <div className="contact-div i-message">
             <img className="icon" src={message} alt="message" />
             <div className="details">
-              <p className="headers">Send Me An Email</p>
+              <p className="headers">Send An Email</p>
               <a
                 className="email-link"
                 href="mailto:mdflynn34@outlook.com"
@@ -50,7 +51,7 @@ const Contact = () => {
           <div className="contact-div i-twitter">
             <img className="icon" src={twitter} alt="twitter" />
             <div className="details">
-              <p className="headers">DM me on Twitter</p>
+              <p className="headers">DM on Twitter</p>
               <a
                 className="email-link"
                 href="https://twitter.com/messages/compose?recipient_id=1317841190478249985"
@@ -63,10 +64,16 @@ const Contact = () => {
             </div>
           </div>
         </section>
+        <div className="message-div">
+          <h2 className="send-message rainbow-animate">Or send me a message!</h2>
+        </div>
         <div className="contactform">
           <ContactForm />
         </div>
       </div>
+      <footer className="about-footer">
+        <Button />
+      </footer>
     </main>
   );
 };

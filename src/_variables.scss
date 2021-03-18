@@ -17,3 +17,15 @@ $o : 25px;  // glow offset
 $d : 2s;    // duration
 $chars : 6; // # of letters
 $c : cyan yellow tomato;
+$mobile-min: 380px;
+$mobile-max: 480px;
+$tablet-min: 481px;
+$tablet-max: 850px;
+$laptop-min: 769px;
+$laptop-max: 1024px;
+
+// 320px — 480px: Mobile devices
+// 481px — 768px: iPads, Tablets
+// 769px — 1024px: Small screens, laptops
+// 1025px — 1200px: Desktops, large screens
+// 1201px and more —  Extra large screens, TV
