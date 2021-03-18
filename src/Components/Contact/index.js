@@ -2,7 +2,6 @@ import React from "react";
 import ContactForm from "../ContactForm";
 import Button from "../Button";
 import phone from "../../assets/phone.svg";
-import arrow from "../../assets/arrow.svg";
 import message from "../../assets/message.svg";
 import linkedin from "../../assets/linkedin.svg";
 import twitter from "../../assets/twitter.svg";
@@ -66,8 +65,7 @@ const Contact = () => {
           </div>
         </section>
         <div className="message-div">
-          <h2 className="send-message">Or send me a message!</h2>
-          <img className="arrow" src={arrow} alt="direction arrow" />
+          <h2 className="send-message rainbow-animate">Or send me a message!</h2>
         </div>
         <div className="contactform">
           <ContactForm />

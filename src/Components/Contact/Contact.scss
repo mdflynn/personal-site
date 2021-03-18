@@ -56,15 +56,31 @@
   }
 }
 
-.arrow {
-  height: 25px;
-  width: 25px;
-  margin-left: 10px;
+.send-message {
+  text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
+    font-family: monospace;
+    letter-spacing: 5px;
 }
 
-.message-div {
-  display: flex;
-  align-items: center;
+.rainbow-animate {
+  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+  0%,100% {
+      background-position: 0 0;
+  }
+
+  50% {
+      background-position: 100% 0;
+  }
 }
 
 .i-twitter {
@@ -247,10 +263,10 @@
     justify-content: space-evenly;
   }
 
-  .arrow {
-    transform: rotate(90deg);
-    margin-top: 10px;
-  }
+  // .arrow {
+  //   transform: rotate(90deg);
+  //   margin-top: 10px;
+  // }
 
   .contactform {
     -webkit-animation: contactform 6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
