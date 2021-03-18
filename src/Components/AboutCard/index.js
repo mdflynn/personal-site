@@ -21,4 +21,3 @@ const AboutCard = ({ title, description, img, alt }) => {
 };
 
 export default AboutCard;
-// for mobile, add onClick to modal to change opacity

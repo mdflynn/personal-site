@@ -18,7 +18,7 @@ const Career = () => {
   return (
     <section className="about-container">
       <h1 className="career-title">My Career Journey</h1>
-      <h4>(Hover to find out more)</h4>
+      <h4 className="hover-text">(Hover to find out more)</h4>
       <div>
         <AboutCard {...careerWells} />
       </div>
