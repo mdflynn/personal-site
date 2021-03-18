@@ -70,7 +70,7 @@ const Portfolio = () => {
             height="100%"
           />
         </div>
-        <div key={2} className="slide-div test">
+        <div key={2} className="slide-div">
           <h1 className="sign" data-testid="coming-soon">
             Coming
             <br />
