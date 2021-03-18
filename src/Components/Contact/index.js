@@ -1,5 +1,6 @@
 import React from "react";
 import ContactForm from "../ContactForm";
+import Button from "../Button";
 import phone from "../../assets/phone.svg";
 import arrow from "../../assets/arrow.svg";
 import message from "../../assets/message.svg";
@@ -72,6 +73,9 @@ const Contact = () => {
           <ContactForm />
         </div>
       </div>
+      <footer className="about-footer">
+        <Button />
+      </footer>
     </main>
   );
 };

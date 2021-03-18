@@ -111,7 +111,7 @@ const Portfolio = () => {
           </a>{" "}
           profile to for more!
         </h3>
-        <Button className="top-button" />Î
+        <Button className="top-button" />
       </footer>
     </div>
   );
