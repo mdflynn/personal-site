@@ -109,7 +109,7 @@ const Portfolio = () => {
           >
             GitHub
           </a>{" "}
-          profile to checkout more!
+          profile to for more!
         </h3>
         <Button className="top-button" />Î
       </footer>
