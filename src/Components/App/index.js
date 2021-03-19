@@ -16,6 +16,9 @@ function App() {
         <title>Mike Flynn Codes</title>
       </Helmet>
       <Nav />
+      <div className="logo-div">
+        <p className="logo">MF</p>
+      </div>
       <Switch>
         <Route exact path="/" component={WelcomePage} />
         <Route exact path="/personal-site" component={WelcomePage} />
