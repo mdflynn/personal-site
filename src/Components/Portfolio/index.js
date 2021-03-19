@@ -16,7 +16,7 @@ const Portfolio = () => {
       <div key={0} className="slide-div">
           <a
             className="portfolio-title"
-            href="https://https://github.com/UFOMG/ufomg-fe"
+            href="https://github.com/UFOMG/ufomg-fe"
             target="_blank"
             rel="noreferrer"
           >
@@ -99,7 +99,7 @@ const Portfolio = () => {
         </div>
       </Zoom>
       <footer className="about-footer">
-        <h3>
+        <h3 className="footer-text">
           Feel free to checkout my{" "}
           <a
             className="email-link"
