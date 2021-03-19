@@ -13,26 +13,55 @@ const Nav = () => {
     }
   };
 
+  const resetDropdown = () => {
+    setTimeout(() => {
+      const navContainer = document.getElementById("myTopnav");
+      navContainer.className = "topnav";
+    }, 100);
+  };
+
   return (
     <nav className="topnav" id="myTopnav">
-      <NavLink to="/" exact className="nav-link" activeClassName="active-nav">
-        Home
-      </NavLink>
-      <NavLink to="/career" className="nav-link" activeClassName="active-nav">
-        Career
+      <NavLink
+        onMouseUp={() => resetDropdown()}
+        to="/"
+        exact
+        className="nav-link"
+        activeClassName="active-nav"
+      >
+        <p className="nav-text">Home</p>
       </NavLink>
       <NavLink
+        onMouseUp={() => resetDropdown()}
+        to="/career"
+        className="nav-link"
+        activeClassName="active-nav"
+      >
+        <p className="nav-text">Career</p>
+      </NavLink>
+      <NavLink
+        onMouseUp={() => resetDropdown()}
         to="/portfolio"
         className="nav-link"
         activeClassName="active-nav"
       >
-        Portfolio
+         <p className="nav-text">PortFolio</p>
       </NavLink>
-      <NavLink to="/resume" className="nav-link" activeClassName="active-nav">
-        Resume
+      <NavLink
+        onMouseUp={() => resetDropdown()}
+        to="/resume"
+        className="nav-link"
+        activeClassName="active-nav"
+      >
+         <p className="nav-text">Resume</p>
       </NavLink>
-      <NavLink to="/contact" className="nav-link" activeClassName="active-nav">
-        Contact
+      <NavLink
+        onMouseUp={() => resetDropdown()}
+        to="/contact"
+        className="nav-link"
+        activeClassName="active-nav"
+      >
+         <p className="nav-text">Contact</p>
       </NavLink>
       <a
         href="/#"

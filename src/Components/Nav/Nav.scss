@@ -43,6 +43,11 @@
   color: $highlighter;
 }
 
+.nav-text {
+  margin-top: 5px;
+  font-family: MomcakeBold;
+}
+
 @media screen and (max-width: $tablet-max) {
   .topnav {
     width: 100vw;
