@@ -58,14 +58,21 @@
 
 .send-message {
   text-align: center;
-    text-decoration: underline;
-    font-size: 32px;
-    font-family: monospace;
-    letter-spacing: 5px;
+  text-decoration: underline;
+  font-size: 32px;
+  font-family: monospace;
+  letter-spacing: 5px;
 }
 
 .rainbow-animate {
-  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  background: linear-gradient(
+    to right,
+    #6666ff,
+    #0099ff,
+    #00ff00,
+    #ff3399,
+    #6666ff
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -74,12 +81,13 @@
 }
 
 @keyframes rainbow_animation {
-  0%,100% {
-      background-position: 0 0;
+  0%,
+  100% {
+    background-position: 0 0;
   }
 
   50% {
-      background-position: 100% 0;
+    background-position: 100% 0;
   }
 }
 
@@ -87,7 +95,6 @@
   -webkit-animation: i-twitter 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: i-twitter 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-
 
 @-webkit-keyframes i-twitter {
   0% {
@@ -206,6 +213,8 @@
 }
 
 .contactform {
+  display: flex;
+  flex-direction: column;
   -webkit-animation: contactform 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: contactform 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -269,41 +278,41 @@
   // }
 
   .contactform {
-    -webkit-animation: contactform 6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-            animation: contactform 6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    -webkit-animation: contactform 6s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+      both;
+    animation: contactform 6s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   }
 
-@-webkit-keyframes contactform {
-  0% {
-    -webkit-transform: rotateX(100deg);
-            transform: rotateX(100deg);
-    -webkit-transform-origin: bottom;
-            transform-origin: bottom;
-    opacity: 0;
+  @-webkit-keyframes contactform {
+    0% {
+      -webkit-transform: rotateX(100deg);
+      transform: rotateX(100deg);
+      -webkit-transform-origin: bottom;
+      transform-origin: bottom;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0);
+      transform: rotateX(0);
+      -webkit-transform-origin: bottom;
+      transform-origin: bottom;
+      opacity: 1;
+    }
   }
-  100% {
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
-    -webkit-transform-origin: bottom;
-            transform-origin: bottom;
-    opacity: 1;
+  @keyframes contactform {
+    0% {
+      -webkit-transform: rotateX(100deg);
+      transform: rotateX(100deg);
+      -webkit-transform-origin: bottom;
+      transform-origin: bottom;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0);
+      transform: rotateX(0);
+      -webkit-transform-origin: bottom;
+      transform-origin: bottom;
+      opacity: 1;
+    }
   }
-}
-@keyframes contactform {
-  0% {
-    -webkit-transform: rotateX(100deg);
-            transform: rotateX(100deg);
-    -webkit-transform-origin: bottom;
-            transform-origin: bottom;
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
-    -webkit-transform-origin: bottom;
-            transform-origin: bottom;
-    opacity: 1;
-  }
-}
-
 }

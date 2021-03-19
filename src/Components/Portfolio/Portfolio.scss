@@ -93,13 +93,20 @@
     font-size: 45px;
     top: 50%;
   }
+
   .sign {
     font-size: 2rem;
     padding: 15px 30px;
   }
+
   .portfolio-container{
+    margin: 0;
     .bubbly-button {
       display: none;
     }
+  }
+
+  .footer-text {
+    margin: 20px 50px;
   }
 }

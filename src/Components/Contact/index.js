@@ -64,10 +64,10 @@ const Contact = () => {
             </div>
           </div>
         </section>
-        <div className="message-div">
-          <h2 className="send-message rainbow-animate">Or send me a message!</h2>
-        </div>
         <div className="contactform">
+          <div className="message-div">
+            <h2 className="send-message rainbow-animate">Send me a message!</h2>
+          </div>
           <ContactForm />
         </div>
       </div>

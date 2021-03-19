@@ -76,9 +76,12 @@
     flex-direction: column-reverse;
     // width: 50px;
   }
+
   .glow-div {
     font: 12vw/1 Permanent Marker;
+    flex-direction: row;
   }
+
   .resume-div {
     margin: auto;
     width: 65%;

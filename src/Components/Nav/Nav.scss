@@ -3,6 +3,7 @@
 .topnav {
   overflow: hidden;
   background-color: $altbackground;
+  height: 60px;
 }
 
 .topnav a {
@@ -43,10 +44,15 @@
   color: $highlighter;
 }
 
+.nav-text {
+  margin-top: 5px;
+  font-family: MomcakeBold;
+}
+
 @media screen and (max-width: $tablet-max) {
   .topnav {
     width: 100vw;
-    height: 60px;
+    height: 50px;
   }
 
   .icon {
@@ -62,9 +68,7 @@
     float: right;
     display: block;
   }
-}
 
-@media screen and (max-width: $tablet-max) {
   .topnav.responsive {
     position: relative;
     height: auto;

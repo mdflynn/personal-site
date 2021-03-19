@@ -1,13 +1,13 @@
-@import '../../variables';
+@import "../../variables";
 
 @font-face {
-  font-family: 'MomcakeBold';
-  src: url('../../assets/MomcakeBold-WyonA.otf') format('opentype');
+  font-family: "MomcakeBold";
+  src: url("../../assets/MomcakeBold-WyonA.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'MomcakeThin';
-  src: url('../../assets/MomcakeThin-9Y6aZ.otf') format('opentype');
+  font-family: "MomcakeThin";
+  src: url("../../assets/MomcakeThin-9Y6aZ.otf") format("opentype");
 }
 
 html {
@@ -16,4 +16,28 @@ html {
   padding: 0;
   background-color: $background;
   color: $main-text;
+}
+
+.logo-div {
+  background-color: $highlighter;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 10px;
+}
+
+.logo {
+  font-size: 25px;
+}
+
+@media (max-width: $tablet-max) {
+  .logo-div {
+    height: 35px;
+    width: 35px;
+  }
+  .logo {
+    font-size: 20px;
+  }
 }

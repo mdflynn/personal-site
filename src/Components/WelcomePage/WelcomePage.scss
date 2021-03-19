@@ -128,6 +128,7 @@
     opacity: 1;
   }
 }
+
 @keyframes entrance {
   0% {
     -webkit-transform: scale(0);
@@ -157,6 +158,7 @@
     opacity: 1;
   }
 }
+
 @keyframes exit {
   0% {
     -webkit-transform: scale(1);
@@ -184,6 +186,7 @@
     opacity: 1;
   }
 }
+
 @keyframes headshot {
   0% {
     -webkit-transform: scale(0);
@@ -198,8 +201,8 @@
 }
 
 .location {
-  -webkit-animation: location 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: location 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation: location 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: location 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 @-webkit-keyframes location {
@@ -221,8 +224,8 @@
 }
 
 .intro {
-  -webkit-animation: intro 2s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
-  animation: intro 2s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
+  -webkit-animation: intro 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s both;
+  animation: intro 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s both;
 }
 
 @-webkit-keyframes intro {
@@ -244,8 +247,8 @@
 }
 
 .intro-span {
-  -webkit-animation: intro-span 2s cubic-bezier(0.39, 0.575, 0.565, 1) 3s both;
-  animation: intro-span 2s cubic-bezier(0.39, 0.575, 0.565, 1) 3s both;
+  -webkit-animation: intro-span 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2.5s both;
+  animation: intro-span 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2.5s both;
 }
 
 @-webkit-keyframes intro-span {
@@ -265,9 +268,10 @@
     opacity: 1;
   }
 }
+
 .load-last {
-  -webkit-animation: load-last 2s cubic-bezier(0.39, 0.575, 0.565, 1) 4s both;
-  animation: load-last 2s cubic-bezier(0.39, 0.575, 0.565, 1) 4s both;
+  -webkit-animation: load-last 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 3.5s both;
+  animation: load-last 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 3.5s both;
 }
 
 @-webkit-keyframes load-last {
@@ -298,12 +302,13 @@
       margin-right: 0;
     }
   }
+
   .shapes {
     margin: 0 0 -150px 0;
   }
+
   .side-section {
     margin-top: 25px;
-    overflow-x: hidden;
     position: relative;
     .shapes {
       position: absolute;
