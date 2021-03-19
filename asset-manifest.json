@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.9ed52a63.chunk.css",
-    "main.js": "/static/js/main.b6c11940.chunk.js",
-    "main.js.map": "/static/js/main.b6c11940.chunk.js.map",
+    "main.css": "/static/css/main.a38bf16a.chunk.css",
+    "main.js": "/static/js/main.593b4d4f.chunk.js",
+    "main.js.map": "/static/js/main.593b4d4f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.647f0b20.js",
     "runtime-main.js.map": "/static/js/runtime-main.647f0b20.js.map",
     "static/css/2.b57b7cfd.chunk.css": "/static/css/2.b57b7cfd.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.668fe6ae.chunk.js.map": "/static/js/2.668fe6ae.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.b57b7cfd.chunk.css.map": "/static/css/2.b57b7cfd.chunk.css.map",
-    "static/css/main.9ed52a63.chunk.css.map": "/static/css/main.9ed52a63.chunk.css.map",
+    "static/css/main.a38bf16a.chunk.css.map": "/static/css/main.a38bf16a.chunk.css.map",
     "static/js/2.668fe6ae.chunk.js.LICENSE.txt": "/static/js/2.668fe6ae.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/static/media/MomcakeThin-9Y6aZ.6e2715aa.otf",
     "static/media/black.3dceb7f2.jpg": "/static/media/black.3dceb7f2.jpg",
@@ -33,7 +33,7 @@
     "static/js/runtime-main.647f0b20.js",
     "static/css/2.b57b7cfd.chunk.css",
     "static/js/2.668fe6ae.chunk.js",
-    "static/css/main.9ed52a63.chunk.css",
-    "static/js/main.b6c11940.chunk.js"
+    "static/css/main.a38bf16a.chunk.css",
+    "static/js/main.593b4d4f.chunk.js"
   ]
 }
