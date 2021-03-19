@@ -20,9 +20,10 @@ describe("Nav", () => {
         <Nav />
       </MemoryRouter>
     );
+    
     const home = screen.getByText("Home");
     const career = screen.getByText("Career");
-    const portfolio = screen.getByText("Portfolio");
+    const portfolio = screen.getByRole('link', { name: /portfolio/i })
     const resume = screen.getByText("Resume");
     const contact = screen.getByText("Contact");
 
